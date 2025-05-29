@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="eu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sinonimoak Jokoa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hitzkale</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     body {
       font-family: 'Inter', sans-serif;
     }
-    .btn-disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
   </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
-  }
-}
-</script>
 </head>
-<body class="bg-slate-50">
+<body class="bg-gradient-to-br from-blue-50 to-purple-100 min-h-screen flex flex-col items-center justify-center text-gray-800">
 
-  <div class="w-full px-4 py-2 bg-slate-100 border-b border-slate-200 text-center">
-    <a href="https://hitzkale.org" class="inline-block text-sm text-blue-600 font-medium hover:underline">
-      ⬅ Itzuli Hitzkale hasierara
+  <header class="text-center mb-12">
+    <h1 class="text-5xl font-bold text-gray-800 mb-4">HITZKALE</h1>
+    <p class="text-lg text-gray-600">Euskararentzako tresna erabilgarriak</p>
+  </header>
+
+  <main class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl w-full">
+    <a href="https://hiztegia.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-5xl mb-4">📚</div>
+      <h2 class="text-2xl font-semibold mb-2">Hiztegia</h2>
+      <p class="text-gray-600">Esanahiak, adibideak eta erabilerak bilatzeko hiztegia.</p>
     </a>
-  </div>
 
-  <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+    <a href="https://sinonimoak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-5xl mb-4">🔁</div>
+      <h2 class="text-2xl font-semibold mb-2">Sinonimoak</h2>
+      <p class="text-gray-600">Euskara aberasteko hitz baliokideak aurkitu.</p>
+    </a>
+
+    <a href="https://txartelak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-5xl mb-4">🃏</div>
+      <h2 class="text-2xl font-semibold mb-2">Txartelak</h2>
+      <p class="text-gray-600">Ikasi euskara jolasean, txartel bidezko jokoarekin.</p>
+    </a>
+  </main>
+
+  <footer class="mt-16 text-sm text-gray-500">
+    &copy; 2025 Hitzkale.org — Herramientak euskararentzat
+  </footer>
+
 </body>
-</html><link rel="stylesheet" href="index.css">
-<script src="index.tsx" type="module"></script>
+</html>
