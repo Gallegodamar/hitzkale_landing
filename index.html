@@ -25,40 +25,54 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Space+Grotesk:wght@400;600&display=swap');
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    h1, h2 {
+      font-family: 'Chakra Petch', sans-serif;
     }
   </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-purple-100 min-h-screen flex flex-col items-center justify-center text-gray-800">
 
-  <header class="text-center mb-12">
-    <h1 class="text-5xl font-bold text-gray-800 mb-4">HITZKALE</h1>
-    <p class="text-lg text-gray-600">Euskararentzako tresna erabilgarriak</p>
+  <header class="text-center mb-12 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">HITZKALE</h1>
   </header>
 
-  <main class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl w-full">
-    <a href="https://hiztegia.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
-      <div class="text-5xl mb-4">📚</div>
-      <h2 class="text-2xl font-semibold mb-2">Hiztegia</h2>
-      <p class="text-gray-600">Esanahiak, adibideak eta erabilerak bilatzeko hiztegia.</p>
+  <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 max-w-6xl w-full">
+    <a href="https://hiztegia.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 sm:p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-4xl sm:text-5xl mb-4">📚</div>
+      <h2 class="text-xl sm:text-2xl font-semibold">Hiztegia</h2>
     </a>
 
-    <a href="https://sinonimoak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
-      <div class="text-5xl mb-4">🔁</div>
-      <h2 class="text-2xl font-semibold mb-2">Sinonimoak</h2>
-      <p class="text-gray-600">Euskara aberasteko hitz baliokideak aurkitu.</p>
+    <a href="https://sinonimoak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 sm:p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-4xl sm:text-5xl mb-4">🔁</div>
+      <h2 class="text-xl sm:text-2xl font-semibold">Sinonimoak</h2>
     </a>
 
-    <a href="https://txartelak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
-      <div class="text-5xl mb-4">🃏</div>
-      <h2 class="text-2xl font-semibold mb-2">Txartelak</h2>
-      <p class="text-gray-600">Ikasi euskara jolasean, txartel bidezko jokoarekin.</p>
+    <a href="https://txartelak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 sm:p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-4xl sm:text-5xl mb-4">🃏</div>
+      <h2 class="text-xl sm:text-2xl font-semibold">Txartelak</h2>
+    </a>
+
+    <a href="https://hiztegiak.elhuyar.eus/" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 sm:p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-4xl sm:text-5xl mb-4">🔎</div>
+      <h2 class="text-xl sm:text-2xl font-semibold">Elhuyar</h2>
+    </a>
+
+    <a href="https://www.batua.eus/es/" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 sm:p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-4xl sm:text-5xl mb-4">📘</div>
+      <h2 class="text-xl sm:text-2xl font-semibold">Batua</h2>
+    </a>
+
+    <a href="https://www.euskaltzaindia.eus/index.php?option=com_hiztegianbilatu&task=hasiera&Itemid=1693&lang=eu-ES" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 sm:p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-4xl sm:text-5xl mb-4">🏛️</div>
+      <h2 class="text-xl sm:text-2xl font-semibold">Euskaltzaindia</h2>
     </a>
   </main>
 
-  <footer class="mt-16 text-sm text-gray-500">
+  <footer class="mt-16 text-sm text-gray-500 px-4 text-center">
     &copy; 2025 Hitzkale.org — Herramientak euskararentzat
   </footer>
 
