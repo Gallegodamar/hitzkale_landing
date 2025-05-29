@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hitzkale</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @font-face {
+      font-family: 'EuskalHerria';
+      src: url('./euskalherria.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .font-euskal {
+      font-family: 'EuskalHerria', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-100 min-h-screen flex flex-col items-center justify-center text-gray-800 font-sans">
+
+  <header class="text-center mb-12">
+    <h1 class="text-5xl font-euskal text-gray-800 mb-4">HITZKALE</h1>
+    <p class="text-lg text-gray-600">Euskararentzako tresna erabilgarriak</p>
+  </header>
+
+  <main class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl w-full">
+
+    <a href="https://hiztegia.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-5xl mb-4">📚</div>
+      <h2 class="text-2xl font-semibold mb-2">Hiztegia</h2>
+      <p class="text-gray-600">Esanahiak, adibideak eta erabilerak bilatzeko hiztegia.</p>
+    </a>
+
+    <a href="https://sinonimoak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-5xl mb-4">🔁</div>
+      <h2 class="text-2xl font-semibold mb-2">Sinonimoak</h2>
+      <p class="text-gray-600">Euskara aberasteko hitz baliokideak aurkitu.</p>
+    </a>
+
+    <a href="https://txartelak.hitzkale.org" class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transform hover:scale-105 transition duration-300 text-center">
+      <div class="text-5xl mb-4">🃏</div>
+      <h2 class="text-2xl font-semibold mb-2">Txartelak</h2>
+      <p class="text-gray-600">Ikasi euskara jolasean, txartel bidezko jokoarekin.</p>
+    </a>
+
+  </main>
+
+  <footer class="mt-16 text-sm text-gray-500">
+    &copy; 2025 Hitzkale.org — Herramientak euskararentzat
+  </footer>
+
+</body>
+</html>
